@@ -1,0 +1,75 @@
+.part1 h2{
+    color:red;
+}
+.part1 p{
+    color:white;
+    background-color: black;;
+}
+.part2, .part3{
+    color:green;
+}
+.part2 p{
+    background-color: darkred;
+}
+.part4>p{
+    color:green;
+}
+.csym019{
+    float: left;
+    display: inline;
+    background-color: lightblue;
+    margin: 3px;
+    padding: 10px;
+    width: 45%;
+    border: 3px solid maroon;
+    border-radius: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.csym015{
+    float: right;
+    display: inline;
+    background-color: yellow;
+    margin: 3px;
+    padding: 10px;
+    width: 45%;
+    border: 3px solid maroon;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-format{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+}
+.cell{
+    background-color: mediumturquoise;
+    padding: 5px;
+}
+.grid-ex4{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+}
+.header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+.col1{
+    background-color: yellow;
+}
+.col2{
+    background-color: darkblue;
+    color: white;
+}
+.col3{
+    background-color: lightgreen;
+}
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: green;
+    color: white;
+}
