@@ -1,0 +1,10 @@
+{
+    "course" : "MSc Computing",
+    "moduleCode" : "CSYM019",
+    "moduleName" : "Internet Programming",
+    "tutor" : {
+        "firstName" : "Tom",
+        "email": "tom.butler@gmail.com"
+    }
+    
+}

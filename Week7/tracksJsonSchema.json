@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Track catalog",
+    "description": "A catalog",
+    "type": "object",
+    "properties": {
+        "tracks": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id" : {"type":"number"},
+                    "title": {"type": "string"},
+                    "artist": {"type": "string"},
+                    "album": {
+                        "type": "object",
+                        "properties": {
+                            "albumTitle": {"type":"string"},
+                            "albumYear": {"type": "string"}
+                        }
+                    },
+                    "genre": {"type": "string", "enum": ["Jazz","Rock","Pop"]},
+                    "year": {"type": "string","minLength":4, "maxLength": 4, "pattern": "^[0-9]+$"},
+                    "length": {"type": "number", "minimum": 0.00, "pattern": "^[0-9]+(&#92;.[0-9]{1,2})?$"}
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "tracks": [
+        {
+            "id": 1,
+            "title": "A",
+            "artist": "AAA",
+            "album": {
+                "albumTitle": "Unknown",
+                "albumYear": "1990"
+            },
+            "genre": "jazz",
+            "year": "1999",
+            "length": 9
+        },
+        {
+            "id": 2,
+            "title": "B",
+            "artist": "BBB",
+            "album": {
+                "albumTitle": "Unknown",
+                "albumYear": "1992"
+            },
+            "genre": "jazz",
+            "year": "1998",
+            "length": 9
+        }
+    ]
+}

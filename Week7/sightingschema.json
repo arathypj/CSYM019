@@ -1,0 +1,30 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Sightings report",
+    "description": "Reports of rare animals",
+	"type" : "object",
+	"properties" : {
+		"sightings" : {
+			"type" : "array", 
+			"items" : { 
+				"type" : "object",
+				"properties" : {
+					"id": { "type": "number", "minimum": 0.00 },
+					"animal": { "type" : "string", "enum": ["Hare", "Pine Martin"] },
+					"number": { "type" : "number", "minimum": 0.00 },
+					"location": { "type" : "string", "enum": ["LHub", "marshall woods"] },
+					"date": { "type" : "string" },
+					"time": { "type" : "string" },
+					"observor": { 
+						"type": "object",
+						"properties": {
+						    "name": { "type" : "string"},
+						    "email": { "type" : "string"}
+						}
+					},		
+					"observations": { "type" : "string" }
+				}
+			}
+		}
+	}
+}
